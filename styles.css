@@ -7,14 +7,9 @@ body{
   border: 1px solid #dd0fc2;
   padding:1em;
   margin:1em;
-  /*margin-left: 0.5em;*/
   margin-bottom: 0.5em;
   border-radius: 1em;
- 
- 
-  /*width:20em;
-  display:inline-block;
-  min-height:30em;*/
+
 }
 
 .medium_pizza{
@@ -31,19 +26,26 @@ body{
   background-color:#f72585;
   flex:1
 }
-
-.contact_us{
-  background-color:#99d98c;
- 
+.pizza.contact_us {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #21e44c;
 }
 
-@media(min-width:768px){
-  /*body {
-      background-color:blue;
-  }*/
-
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
+.details {
+  margin-right: auto; 
+}
+.credentials {
+  font-weight: bold;
+}
 
 @media(min-width:960px){
   /*body {
